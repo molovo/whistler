@@ -1,0 +1,67 @@
+{{> partials.header }}
+
+<section class="intro border-color--{{ category.fields.color }} background--{{ category.fields.color }}">
+  <a href="/" class="left">
+    {{> partials.whistler }}
+    {{ site.name }}
+  </a>
+  <div class="right">
+    <span class="category-heading">{{ category.name }}</span>
+    <h3>{{{ category.description }}}</h3>
+  </div>
+</section>
+
+<section class="main">
+  <ul class="posts-list">
+    {{# articles }}
+      <li class="posts-list-item" id="{{ slug }}" style="background-image: url({{ article_header_image_url }});">
+        <a href="{{ url }}">
+          <div class="posts-list-item-overlay background--{{ category.fields.color }}"></div>
+          <div class="posts-list-item-wrapper">
+            <h6>{{ category.name }}</h6>
+            <h3>{{ title }}</h3>
+            {{! excerpt }}
+          </div>
+        </a>
+      </li>
+    {{/ articles }}
+    {{# articles }}
+      <li class="posts-list-item" id="{{ slug }}" style="background-image: url({{ article_header_image_url }});">
+        <a href="{{ url }}">
+          <div class="posts-list-item-overlay background--{{ category.fields.color }}"></div>
+          <div class="posts-list-item-wrapper">
+            <h6>{{ category.name }}</h6>
+            <h3>{{ title }}</h3>
+            {{! excerpt }}
+          </div>
+        </a>
+      </li>
+    {{/ articles }}
+    {{# articles }}
+      <li class="posts-list-item" id="{{ slug }}" style="background-image: url({{ article_header_image_url }});">
+        <a href="{{ url }}">
+          <div class="posts-list-item-overlay background--{{ category.fields.color }}"></div>
+          <div class="posts-list-item-wrapper">
+            <h6>{{ category.name }}</h6>
+            <h3>{{ title }}</h3>
+            {{! excerpt }}
+          </div>
+        </a>
+      </li>
+    {{/ articles }}
+    {{# articles }}
+      <li class="posts-list-item" id="{{ slug }}" style="background-image: url({{ article_header_image_url }});">
+        <a href="{{ url }}">
+          <div class="posts-list-item-overlay background--{{ category.fields.color }}"></div>
+          <div class="posts-list-item-wrapper">
+            <h6>{{ category.name }}</h6>
+            <h3>{{ title }}</h3>
+            {{! excerpt }}
+          </div>
+        </a>
+      </li>
+    {{/ articles }}
+  </ul>
+</section>
+
+{{> partials.footer }}

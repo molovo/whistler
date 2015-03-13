@@ -1,0 +1,31 @@
+<nav class="navigation">
+  <a href="#" id="menuLink">&#9776;</a>
+</nav>
+
+<nav class="menu">
+  <div class="intro menu-intro">
+    <a href="/" class="left">
+      {{> partials.whistler }}
+      {{ site.name }}
+    </a>
+    <div class="right">
+      <ul class="pages">
+        <li class="header"><span>Menu</span></li>
+        {{# menu }}
+          <li>
+            <a href="{{ url }}">{{ title }}</a>
+          </li>
+        {{/ menu }}
+      </ul>
+
+      <ul class="categories">
+        <li class="header"><span>Categories</span></li>
+        {{# categories }}
+          <li>
+            <a href="{{ url }}">{{ name }}</a>
+          </li>
+        {{/ categories }}
+      </ul>
+    </div>
+  </div>
+</nav>

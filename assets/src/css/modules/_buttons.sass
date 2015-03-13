@@ -1,0 +1,105 @@
+@keyframes rotate
+  0%
+    transform: rotate(0deg)
+  50%
+    transform: rotate(180deg)
+  100%
+    transform: rotate(360deg)
+
+.button
+  padding: .25em .75em
+  background: transparent
+  color: $dark
+  border: 1px solid $dark
+  appearance: none
+  cursor: pointer
+  text-decoration: none
+
+.badge
+  padding: 0 .75em
+
+.button, .badge
+  border-radius: .25em
+  font-weight: $w_bold
+  font-size: .6em
+  display: inline-block
+  transition: background .25s, color .25s, border-color .25s, margin .25s
+  position: relative
+
+  &.share
+    color: $green
+    border-color: $green
+    @extend .icon, .icon-share
+
+  &.submit
+    background: $green
+    border-color: $green
+    color: white
+
+  &.save
+    @extend .icon, .icon-ok
+
+  &.clear
+    background: transparent
+    color: white
+    border-color: transparent
+
+  &.view
+    @extend .icon, .icon-glasses
+
+  &.cta, &.write
+    background: $blue
+    color: white
+    border-color: $blue
+
+  &.success, &.create, &.submit
+    background: $green
+    color: white
+    border-color: $green
+
+  &.write
+    @extend .icon, .icon-pencil
+
+  &.success
+    @extend .icon, .icon-ok-circled
+
+  &.create
+    @extend .icon, .icon-plus-circled
+
+  &.error, &.delete
+    background: $red
+    color: white
+    border-color: $red
+    @extend .icon, .icon-cancel-circled
+
+  &.warning
+    background: $yellow
+    color: $dark
+    border-color: $yellow
+    @extend .icon, .icon-exclamation
+
+  &:hover
+    background: $dark
+    color: white
+    border-color: $dark
+
+  &.submit, &.cta
+    @extend .icon, .icon-right-circled
+
+  &.working
+    background: $dark
+    color: white
+    border-color: $dark
+    @extend .icon, .icon-compass
+
+    &:after
+      line-height: .775em
+      animation: rotate 1s infinite
+      content: '\e0a2'
+
+nav.buttons
+  margin-bottom: 1.5em
+
+.badge
+  background: $blue
+  color: white

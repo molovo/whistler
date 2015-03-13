@@ -1,0 +1,45 @@
+.intro
+  padding: .75em 3em 3em
+  border-top: 1.5em solid $dark
+
+  +split(1, 2.618)
+
+  @media (min-width: $bp_medium)
+    padding-top: 9em
+
+  &.with-image
+    background: url('') center / cover no-repeat
+    color: white
+
+  .left
+    text-decoration: none
+
+    @media (max-width: $bp_medium)
+      margin-bottom: 9em
+
+  svg
+    width: 2.25em
+    height: 2.25em
+    transform: translateY(30%)
+
+    @media (min-width: $bp_medium)
+      transform: translateY(-20%)
+
+    path
+      fill: $yellow
+
+  .right
+    position: relative
+    padding-top: .375em
+    margin-top: -.375em
+
+    a
+      color: $yellow
+
+    .category-heading
+      font-family: $secondary
+      font-size: .6em
+      text-transform: uppercase
+      position: absolute
+      bottom: 100%
+      letter-spacing: .1em

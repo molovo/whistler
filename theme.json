@@ -1,0 +1,28 @@
+{
+  "name": "Whistler",
+  "demo_url": "http://whistler.wildecms.com",
+  "creator": {
+    "name": "James Dinsdale",
+    "email": "hi@molovo.co.uk",
+    "website": "http://molovo.co",
+    "twitter": "@molovo"
+  },
+  "options": {
+    "custom_fields": [ {
+      "name": "category_color",
+      "type": "select",
+      "label": "Color",
+      "usage": "categories",
+      "options": {
+        "yellow": "Yellow",
+        "navy": "Navy",
+        "blue": "Blue",
+        "red": "Red",
+        "green": "Green",
+        "purple": "Purple",
+        "mauve": "Mauve",
+        "orange": "Orange"
+      }
+    } ]
+  }
+}

@@ -1,0 +1,26 @@
+{{> partials.header }}
+
+<section class="intro border-color--{{ article.category.fields.color }} {{# article.article_header_image_url }}with-image" style="background-image: url({{ article.article_header_image_url }}){{/ article.article_header_image_url }}">
+  <a href="/" class="left">
+    {{> partials.whistler }}
+    {{ site.name }}
+  </a>
+  <div class="right">
+    <span class="category-heading">{{ article.category.name }}</span>
+    <h3>{{{ article.title }}}</h3>
+  </div>
+</section>
+
+<section class="post">
+  <aside class="post-meta">
+    <hgroup>
+      <span>{{ article.date }}</span>
+      <span><em>by</em> {{ article.author.name }}</span>
+    </hgroup>
+  </aside>
+  <article class="post-content">
+    {{{ article.content }}}
+  </article>
+</section>
+
+{{> partials.footer }}

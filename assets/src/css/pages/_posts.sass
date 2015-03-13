@@ -1,0 +1,58 @@
+.posts-list
+  +split(1,1.618)
+
+  @media (min-width: $bp_medium)
+    & > :nth-child(4n)
+      width: percentage(1.618/2.618)
+
+    & > :nth-child(4n+3)
+      width: percentage(1/2.618)
+
+    & > :nth-child(4n+2)
+      width: percentage(1/2.618)
+
+    & > :nth-child(4n+1)
+      width: percentage(1.618/2.618)
+
+  &-item
+    background: url('') center / cover no-repeat
+    height: 21em
+    display: inline-block
+    position: relative
+
+    @media (max-width: $bp_medium)
+      margin-bottom: -.4em
+
+    &-overlay
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      content: ''
+      z-index: 1
+      opacity: 0
+      transition: opacity .25s
+
+    &:hover
+      .posts-list-item-overlay
+        opacity: .95
+
+    &-wrapper
+      position: absolute
+      bottom: 0
+      left: 0
+      z-index: 2
+      padding: 1.5em
+      color: white
+      max-width: 24em
+
+    h6
+      text-transform: uppercase
+      margin-bottom: 0
+      margin-top: .375em
+      letter-spacing: .1em
+      font-size: .6em
+      font-weight: 300
+      position: absolute
+      top: 0

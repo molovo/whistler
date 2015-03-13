@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+
+  <link rel="stylesheet" href="{{ theme_url }}/assets/dist/css/main.min.css">
+</head>
+<body class="{{ page.slug }} {{# is_homepage }}home{{/ is_homepage }}">
+  {{> partials.nav }}
