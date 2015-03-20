@@ -1,0 +1,17 @@
+{{> partials.header }}
+
+<section class="intro border-color--{{ article.category.fields.color }} {{# article.article_header_image_url }}with-image" style="background-image: url({{ article.article_header_image_url }}){{/ article.article_header_image_url }}">
+  <a href="/" class="left">
+    {{> partials.whistler }}
+    {{ site.name }}
+  </a>
+  <div class="right">
+    <h3>Sitemap</h3>
+  </div>
+</section>
+
+<section class="main">
+  {{ sitemap }}
+</section>
+
+{{> partials.footer }}
