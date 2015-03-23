@@ -1825,6 +1825,7 @@ nav.buttons {
   bottom: 0;
   right: 0;
   z-index: 0;
+  background: rgba(9, 39, 55, 0.5);
 }
 .intro .left {
   text-decoration: none;
