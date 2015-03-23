@@ -20,6 +20,16 @@
     display: inline-block
     position: relative
 
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      z-index: 0
+      background: rgba($dark, .3)
+
     @media (max-width: $bp_medium)
       margin-bottom: -.4em
 
