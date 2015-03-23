@@ -1,6 +1,7 @@
 .intro
   padding: .75em 3em 3em
   border-top: 1.5em solid $dark
+  position: relative
 
   +split(1, 2.618)
 
@@ -11,8 +12,18 @@
     background: url('') center / cover no-repeat
     color: white
 
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      z-index: 0
+
   .left
     text-decoration: none
+    z-index: 1
 
     @media (max-width: $bp_medium)
       margin-bottom: 9em
@@ -29,6 +40,7 @@
       fill: $yellow
 
   .right
+    z-index: 1
     position: relative
     padding-top: .375em
     margin-top: -.375em

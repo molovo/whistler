@@ -1,0 +1,21 @@
+{
+  "folders": [ {
+    "path": "/Users/james/Dropbox/wilde-themes/whistler",
+    "name": "Whistler"
+  } ],
+  "settings": {
+    "filename_filter": "\\.(css|js|sass|less|scss|roo|html|markdown)$",
+    "build_on_save": 1
+  },
+  "build_systems": [ {
+    "cmd": [ "gulp" ],
+    "path": "/Applications/MAMP/bin/php/php5.4.10/bin:/Users/james/.rvm/gems/ruby-2.0.0-p247/bin:/Users/james/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/james/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/james/.rvm/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:~/.rvm/bin",
+    "working_dir": "$project_path/assets",
+    "name": "Whistler Build",
+
+    "variants": [ {
+      "cmd": [ "gulp", "default", "images" ],
+      "name": "Run"
+    } ]
+  } ]
+}

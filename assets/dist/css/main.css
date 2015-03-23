@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Ek+Mukta:300,300i,700);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700,400italic,700italic);
 @font-face {
@@ -224,21 +223,21 @@ ins:after, del:after {
 
 ins {
   background: rgba(99, 195, 122, 0.3);
-  border-bottom: 1px solid #63C37A;
+  border-bottom: 1px solid #63c37a;
 }
 
 del {
   position: relative;
 }
 del:before {
-  color: #B52936;
+  color: #b52936;
   content: "*";
 }
 del:after {
   position: absolute;
-  background: #B52936;
+  background: #b52936;
   color: white;
-  border-bottom: 1px solid #B52936;
+  border-bottom: 1px solid #b52936;
   left: 0;
   bottom: 100%;
   white-space: nowrap;
@@ -1474,10 +1473,12 @@ del:hover:after {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
+
   50% {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
@@ -1489,10 +1490,12 @@ del:hover:after {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
+
   50% {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
@@ -1522,12 +1525,12 @@ del:hover:after {
   position: relative;
 }
 .button.share, .badge.share {
-  color: #63C37A;
-  border-color: #63C37A;
+  color: #63c37a;
+  border-color: #63c37a;
 }
 .button.submit, .badge.submit {
-  background: #63C37A;
-  border-color: #63C37A;
+  background: #63c37a;
+  border-color: #63c37a;
   color: white;
 }
 .button.clear, .badge.clear {
@@ -1536,24 +1539,24 @@ del:hover:after {
   border-color: transparent;
 }
 .button.cta, .button.write, .badge.cta, .badge.write {
-  background: #1A92CE;
+  background: #1a92ce;
   color: white;
-  border-color: #1A92CE;
+  border-color: #1a92ce;
 }
 .button.success, .button.create, .button.submit, .badge.success, .badge.create, .badge.submit {
-  background: #63C37A;
+  background: #63c37a;
   color: white;
-  border-color: #63C37A;
+  border-color: #63c37a;
 }
 .button.error, .button.delete, .badge.error, .badge.delete {
-  background: #B52936;
+  background: #b52936;
   color: white;
-  border-color: #B52936;
+  border-color: #b52936;
 }
 .button.warning, .badge.warning {
-  background: #FFCA43;
+  background: #ffca43;
   color: #092737;
-  border-color: #FFCA43;
+  border-color: #ffca43;
 }
 .button:hover, .badge:hover {
   background: #092737;
@@ -1569,7 +1572,7 @@ del:hover:after {
   line-height: 0.775em;
   -webkit-animation: rotate 1s infinite;
           animation: rotate 1s infinite;
-  content: "";
+  content: "\e0a2";
 }
 
 nav.buttons {
@@ -1577,7 +1580,7 @@ nav.buttons {
 }
 
 .badge {
-  background: #1A92CE;
+  background: #1a92ce;
   color: white;
 }
 
@@ -1587,7 +1590,7 @@ nav.buttons {
 }
 
 #nprogress .bar {
-  background: #63C37A;
+  background: #63c37a;
   position: fixed;
   z-index: 1031;
   top: 0;
@@ -1603,7 +1606,7 @@ nav.buttons {
   right: 0px;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px #63C37A, 0 0 5px #63C37A;
+  box-shadow: 0 0 10px #63c37a, 0 0 5px #63c37a;
   opacity: 1.0;
   -webkit-transform: rotate(3deg) translate(0px, -4px);
   -ms-transform: rotate(3deg) translate(0px, -4px);
@@ -1625,8 +1628,8 @@ nav.buttons {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   border: solid 0.25em rgba(128, 128, 128, 0.3);
-  border-top-color: #63C37A;
-  border-left-color: #63C37A;
+  border-top-color: #63c37a;
+  border-left-color: #63c37a;
   border-radius: 50%;
   -webkit-animation: nprogress-spinner 400ms linear infinite;
   animation: nprogress-spinner 400ms linear infinite;
@@ -1646,6 +1649,7 @@ nav.buttons {
   0% {
     -webkit-transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
   }
@@ -1655,13 +1659,14 @@ nav.buttons {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
 .error-page {
-  background: #B52936;
+  background: #b52936;
   position: absolute;
   top: 0;
   left: 0;
@@ -1703,7 +1708,7 @@ nav.buttons {
           transition: background 0.15s, color 0.15s;
 }
 .navigation a:hover {
-  background: #FFCA43;
+  background: #ffca43;
   color: #092737;
 }
 
@@ -1780,6 +1785,7 @@ nav.buttons {
 .intro {
   padding: 0.75em 3em 3em;
   border-top: 1.5em solid #092737;
+  position: relative;
 }
 .intro > :nth-child(2n+1), .intro > :nth-child(2n) {
   display: inline-block;
@@ -1811,8 +1817,18 @@ nav.buttons {
   background: url("") center/cover no-repeat;
   color: white;
 }
+.intro.with-image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
 .intro .left {
   text-decoration: none;
+  z-index: 1;
 }
 @media (max-width: 40em) {
   .intro .left {
@@ -1834,15 +1850,16 @@ nav.buttons {
   }
 }
 .intro svg path {
-  fill: #FFCA43;
+  fill: #ffca43;
 }
 .intro .right {
+  z-index: 1;
   position: relative;
   padding-top: 0.375em;
   margin-top: -0.375em;
 }
 .intro .right a {
-  color: #FFCA43;
+  color: #ffca43;
 }
 .intro .right .category-heading {
   font-family: "Ek Mukta", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -1854,7 +1871,7 @@ nav.buttons {
 }
 
 .background--green {
-  background-color: #63C37A;
+  background-color: #63c37a;
   color: #092737;
 }
 .background--green svg path {
@@ -1862,11 +1879,11 @@ nav.buttons {
 }
 
 .border-color--green {
-  border-color: #63C37A;
+  border-color: #63c37a;
 }
 
 .background--yellow {
-  background-color: #FFCA43;
+  background-color: #ffca43;
   color: #092737;
 }
 .background--yellow svg path {
@@ -1874,34 +1891,34 @@ nav.buttons {
 }
 
 .border-color--yellow {
-  border-color: #FFCA43;
+  border-color: #ffca43;
 }
 
 .background--red {
-  background-color: #B52936;
+  background-color: #b52936;
   color: white;
 }
 
 .border-color--red {
-  border-color: #B52936;
+  border-color: #b52936;
 }
 
 .background--blue {
-  background-color: #1A92CE;
+  background-color: #1a92ce;
   color: white;
 }
 
 .border-color--blue {
-  border-color: #1A92CE;
+  border-color: #1a92ce;
 }
 
 .background--purple {
-  background-color: #560B66;
+  background-color: #560b66;
   color: white;
 }
 
 .border-color--purple {
-  border-color: #560B66;
+  border-color: #560b66;
 }
 
 .background--navy {
